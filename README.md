@@ -152,8 +152,13 @@ proxies: {}
 `python pentest.py`
 - Or Pentest all Contracts in "SmartContracts" dicrectory:
 `./run_all_contracts.sh`
+## 6. Demo
 
-## 6. Developers
+
+https://github.com/user-attachments/assets/3cf889c0-157d-4e3a-bf37-e15a5747d082
+
+
+## 7. Developers
 - Trung, Doan Minh (trungdm@uit.edu.vn)
 - Nghi, Tran Gia (https://orcid.org/0009-0005-1630-6551, https://github.com/gianghitran)
 - Quang, Nguyen Dinh
