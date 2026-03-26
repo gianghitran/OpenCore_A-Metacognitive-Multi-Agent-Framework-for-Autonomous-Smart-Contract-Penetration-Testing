@@ -40,7 +40,6 @@ The primary goal of this project is to **evaluate the reasoning, planning, and a
 - Added a `docker-compose.yml` to deploy:
   - Kali Linux (security tool execution)
   - MySQL (state and log storage)
-  - Milvus (vector-based knowledge base)
 - Ensures **reproducibility of experiments**, which is essential for academic research.
 
 ---
@@ -54,12 +53,6 @@ The system consists of the following core components:
 
 - **Executor Agent**  
   Executes static analysis, vulnerability scanning, and exploit attempts within a sandboxed environment.
-
-- **Knowledge Base (Milvus)**  
-  Stores:
-  - Historical execution results
-  - Smart contract vulnerability patterns
-  - Agent decision traces
 
 - **Kali Linux Container**  
   Isolated environment for running security analysis tools.
@@ -95,7 +88,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 2. Service Deployment Using Docker
-### 5.2 Create docker-compose.yml with Kali Linux, MySQL, and Milvus services
+### 5.2 Create docker-compose.yml with Kali Linux, MySQL
 `docker-compose up -d`
 
 ### 5.3 Configuration
