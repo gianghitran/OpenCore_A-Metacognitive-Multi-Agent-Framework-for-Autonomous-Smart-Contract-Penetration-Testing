@@ -20,7 +20,7 @@ The primary goal of this project is to **evaluate the reasoning, planning, and a
 - https://github.com/KHenryAegis/VulnBot
 
 ### Scope Redefinition
-- The original VulnBot focuses on **general-purpose penetration testing**
+- The original VulnBot focuses on **general-purpose penetration testing (Web2)** 
 - This project **reorients the system toward Smart Contract security**, where:
   - Smart contracts are the **primary attack surface**
   - Infrastructure components (Docker, Kali Linux) serve only as **execution environments for security tools**
