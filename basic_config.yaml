@@ -1,0 +1,9 @@
+log_verbose: true
+mode: auto
+http_default_timeout: 300
+kali:
+  hostname: 127.0.0.1
+  port: 5555
+  username: root
+  password: root
+default_bind_host: 127.0.0.1

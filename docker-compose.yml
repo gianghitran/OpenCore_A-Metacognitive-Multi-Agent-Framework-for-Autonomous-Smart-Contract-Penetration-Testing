@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  kali:
+    image: kalilinux/kali-rolling
+    container_name: kali-for-scvuln
+    command: >
+      /bin/bash -c "
+      apt-get update && 
+      apt-get install -y openssh-server procps nmap net-tools curl wget && 
+      echo 'root:root' | chpasswd && 
+      sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && 
+      service ssh start && 
+      tail -f /dev/null
+      "
+    volumes:
+      - kali-apt-cache:/var/cache/apt/archives
+      - ./SmartContracts:/root/SmartContracts:ro
+      - ./installer.sh:/root/installer.sh
+      - ./Experience_Results.csv:/root/Experience_Results.csv
+     
+    ports:
+      - "5555:22"
+    networks:
+      - scvuln-net
+  # 2. MySQL Container for storing session, plan, and task data
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-for-scvuln
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: scvuln_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - scvuln-net
+
+# Define the network for all services to communicate
+networks:
+  scvuln-net:
+    driver: bridge
+
+# Define the persistent volumes
+volumes:
+  mysql-data:
+  milvus-etcd:
+  milvus-minio:
+  milvus-data:
+  kali-apt-cache:
+
