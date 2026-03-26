@@ -1,5 +1,8 @@
 # Automated Smart Contract Penetration Testing using Multi-Agent LLMs
-
+## ⚠️ Disclaimer & Proprietary Notice
+> Please note that this repository contains the **Open Core** version of the research framework. Due to the sensitive nature of security research and intellectual property (IP) agreements, certain critical modules and proprietary algorithms have been **selectively redacted or omitted**. 
+> 
+> The provided code is intended for academic demonstration and reproducibility of the core findings, rather than a full-scale production deployment.
 ## 1. Introduction
 
 This project presents an **automated penetration testing system for Smart Contracts** powered by **Multi-Agent Large Language Models (LLMs)**.
@@ -153,3 +156,5 @@ https://github.com/user-attachments/assets/3cf889c0-157d-4e3a-bf37-e15a5747d082
 - Nghi, Tran Gia (https://orcid.org/0009-0005-1630-6551, https://github.com/gianghitran)
 - Quang, Nguyen Dinh
 - Truong, Tran Van
+
+
