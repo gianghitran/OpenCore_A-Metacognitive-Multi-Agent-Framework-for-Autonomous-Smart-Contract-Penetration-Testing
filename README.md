@@ -108,16 +108,6 @@ api_key: YOUR_API_Key
 llm_model: openai
 base_url: 'https://api.openai.com/v1'
 llm_model_name: gpt-5-mini-2025-08-07
-
-# Embedding configuration
-embedding_models: maidalun1020/bce-embedding-base_v1
-embedding_type: local
-embedding_url: ''
-context_length: 120000
-
-# Reranking model
-rerank_model: maidalun1020/bce-reranker-base_v1
-
 # Inference parameters
 temperature: 1.0
 history_len: 5
