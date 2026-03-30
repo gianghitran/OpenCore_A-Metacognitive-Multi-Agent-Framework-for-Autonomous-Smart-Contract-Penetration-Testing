@@ -7,6 +7,11 @@
 
 This project presents an **automated penetration testing system for Smart Contracts** powered by **Multi-Agent Large Language Models (LLMs)**.
 
+<figure>
+  <img src="https://github.com/user-attachments/assets/d3afc492-42ed-4b78-bd94-eaaec6bfd26c" alt="SMC Architecture">
+  <figcaption align="center"><b>Figure 1:</b> SMCVuln Overview.</figcaption>
+</figure>
+
 The system enables intelligent agents to:
 - Automatically **analyze smart contract targets**
 - **Plan penetration testing steps** in multiple phases
